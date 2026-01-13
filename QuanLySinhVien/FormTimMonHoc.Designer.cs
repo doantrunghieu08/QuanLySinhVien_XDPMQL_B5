@@ -35,6 +35,7 @@
             panel1 = new Panel();
             label1 = new Label();
             label8 = new Label();
+            button1 = new Button();
             tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvMonHoc).BeginInit();
             panel1.SuspendLayout();
@@ -43,28 +44,30 @@
             // tableLayoutPanel1
             // 
             tableLayoutPanel1.ColumnCount = 3;
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 350F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
             tableLayoutPanel1.Controls.Add(txtTimKiem, 1, 1);
             tableLayoutPanel1.Controls.Add(label2, 0, 1);
             tableLayoutPanel1.Controls.Add(dgvMonHoc, 0, 2);
             tableLayoutPanel1.Controls.Add(panel1, 1, 0);
+            tableLayoutPanel1.Controls.Add(button1, 0, 3);
             tableLayoutPanel1.Dock = DockStyle.Fill;
             tableLayoutPanel1.Location = new Point(0, 0);
             tableLayoutPanel1.Margin = new Padding(3, 4, 3, 4);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
-            tableLayoutPanel1.RowCount = 3;
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 299F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 27F));
+            tableLayoutPanel1.RowCount = 4;
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 42.391304F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 7.9710145F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
             tableLayoutPanel1.Size = new Size(902, 552);
             tableLayoutPanel1.TabIndex = 41;
             // 
             // txtTimKiem
             // 
-            txtTimKiem.Location = new Point(279, 130);
+            txtTimKiem.Location = new Point(303, 141);
             txtTimKiem.Margin = new Padding(3, 4, 3, 4);
             txtTimKiem.Name = "txtTimKiem";
             txtTimKiem.Size = new Size(270, 27);
@@ -75,9 +78,9 @@
             // 
             label2.AutoSize = true;
             label2.Dock = DockStyle.Right;
-            label2.Location = new Point(206, 126);
+            label2.Location = new Point(230, 137);
             label2.Name = "label2";
-            label2.Size = new Size(67, 126);
+            label2.Size = new Size(67, 137);
             label2.TabIndex = 37;
             label2.Text = "Từ Khóa:";
             // 
@@ -86,11 +89,11 @@
             dgvMonHoc.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
             dgvMonHoc.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             tableLayoutPanel1.SetColumnSpan(dgvMonHoc, 3);
-            dgvMonHoc.Location = new Point(3, 256);
+            dgvMonHoc.Location = new Point(3, 278);
             dgvMonHoc.Margin = new Padding(3, 4, 3, 4);
             dgvMonHoc.Name = "dgvMonHoc";
             dgvMonHoc.RowHeadersWidth = 51;
-            dgvMonHoc.Size = new Size(896, 291);
+            dgvMonHoc.Size = new Size(896, 225);
             dgvMonHoc.TabIndex = 39;
             // 
             // panel1
@@ -98,9 +101,9 @@
             panel1.Controls.Add(label1);
             panel1.Controls.Add(label8);
             panel1.Dock = DockStyle.Fill;
-            panel1.Location = new Point(279, 3);
+            panel1.Location = new Point(303, 3);
             panel1.Name = "panel1";
-            panel1.Size = new Size(270, 120);
+            panel1.Size = new Size(294, 131);
             panel1.TabIndex = 41;
             // 
             // label1
@@ -108,7 +111,7 @@
             label1.Anchor = AnchorStyles.Top;
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(23, 6);
+            label1.Location = new Point(35, 6);
             label1.Margin = new Padding(5, 0, 5, 0);
             label1.Name = "label1";
             label1.Size = new Size(242, 31);
@@ -119,12 +122,23 @@
             // 
             label8.Anchor = AnchorStyles.Top;
             label8.AutoSize = true;
-            label8.Location = new Point(26, 61);
+            label8.Location = new Point(38, 61);
             label8.Margin = new Padding(5, 0, 5, 0);
             label8.Name = "label8";
             label8.Size = new Size(244, 20);
             label8.TabIndex = 40;
             label8.Text = "Đoàn Trung Hiếu - CD233725 - N01";
+            // 
+            // button1
+            // 
+            button1.Anchor = AnchorStyles.None;
+            button1.Location = new Point(103, 516);
+            button1.Name = "button1";
+            button1.Size = new Size(94, 26);
+            button1.TabIndex = 43;
+            button1.Text = "Xuất excel";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // FormTimMonHoc
             // 
@@ -152,5 +166,6 @@
         private Panel panel1;
         private Label label1;
         private Label label8;
+        private Button button1;
     }
 }

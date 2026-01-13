@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BUS;
+using QuanLyThuVien;
 
 namespace QuanLySinhVien
 {
@@ -27,6 +28,12 @@ namespace QuanLySinhVien
         private void txtTimKiem_TextChanged(object sender, EventArgs e)
         {
             dgvMonHoc.DataSource = bus.Search(txtTimKiem.Text);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ClassExcel excel = new ClassExcel();
+            excel.XuatExcel(dgvMonHoc, "MonHoc.xlsx");
         }
     }
 }

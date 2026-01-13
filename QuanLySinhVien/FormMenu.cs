@@ -70,9 +70,14 @@ namespace QuanLySinhVien
             if (frm != null)
             {
                 frm.MdiParent = this;
-                frm.WindowState = FormWindowState.Maximized; 
+                frm.WindowState = FormWindowState.Maximized;
                 frm.Show();
             }
+        }
+
+        private void SearchSinhVienItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

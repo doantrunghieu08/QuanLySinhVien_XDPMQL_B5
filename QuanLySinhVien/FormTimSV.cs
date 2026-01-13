@@ -1,4 +1,5 @@
 ﻿using BUS;
+using QuanLyThuVien;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -23,7 +24,7 @@ namespace QLTV_DangND_0899_LTMT5
         {
 
         }
-       void loadData()
+        void loadData()
         {
             dgvTimSV.DataSource = bus.LoadData();
         }
@@ -36,6 +37,12 @@ namespace QLTV_DangND_0899_LTMT5
         {
 
             dgvTimSV.DataSource = bus.Search(txtTimKiem.Text);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ClassExcel excel = new ClassExcel();
+            excel.XuatExcel(dgvTimSV, "sinhvien.xlsx");
         }
     }
 }

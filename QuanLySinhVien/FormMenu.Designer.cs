@@ -87,37 +87,37 @@
             // SinhVienItem
             // 
             SinhVienItem.Name = "SinhVienItem";
-            SinhVienItem.Size = new Size(224, 26);
+            SinhVienItem.Size = new Size(166, 26);
             SinhVienItem.Text = "Sinh viên ";
             // 
             // KhoaItem
             // 
             KhoaItem.Name = "KhoaItem";
-            KhoaItem.Size = new Size(224, 26);
+            KhoaItem.Size = new Size(166, 26);
             KhoaItem.Text = "Khoa";
             // 
             // MonHocItem
             // 
             MonHocItem.Name = "MonHocItem";
-            MonHocItem.Size = new Size(224, 26);
+            MonHocItem.Size = new Size(166, 26);
             MonHocItem.Text = "Môn học";
             // 
             // NhapDiemItem
             // 
             NhapDiemItem.Name = "NhapDiemItem";
-            NhapDiemItem.Size = new Size(224, 26);
+            NhapDiemItem.Size = new Size(166, 26);
             NhapDiemItem.Text = "Nhập điểm";
             // 
             // XemDiemItem
             // 
             XemDiemItem.Name = "XemDiemItem";
-            XemDiemItem.Size = new Size(224, 26);
+            XemDiemItem.Size = new Size(166, 26);
             XemDiemItem.Text = "Xem điểm";
             // 
             // ThongKeItem
             // 
             ThongKeItem.Name = "ThongKeItem";
-            ThongKeItem.Size = new Size(224, 26);
+            ThongKeItem.Size = new Size(166, 26);
             ThongKeItem.Text = "Thống kê";
             // 
             // hToolStripMenuItem
@@ -139,6 +139,7 @@
             SearchSinhVienItem.Name = "SearchSinhVienItem";
             SearchSinhVienItem.Size = new Size(224, 26);
             SearchSinhVienItem.Text = "Sinh viên";
+            SearchSinhVienItem.Click += SearchSinhVienItem_Click;
             // 
             // SearchKhoaItem
             // 
